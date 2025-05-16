@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formuaire2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="body2">
+    <form method="post" action="cible_formulaire.php">
+        <p> 
+        <fieldset>
+            <legend>Mes Informations</legend>
+        <label for="NOM">NOM</label><br />
+        <input type="text" name="NOM" id="NOM"/><br/>
+        <label for="Prénom">Prénom</label> <br />
+        <input type="text" name="Prénom" id="Prénom"/><br/>
+        <label for="Datedenaissance">Date de naissance</label> <br />
+        <input type="text" name="Date" id="Date"/><br/>
+        <label for="Email">Email</label><br /> 
+        <input type="text" name="Email" id="Email"/><br/>
+        <label for="Numéro">Numéro</label> <br />
+        <input type="text" name="Num" id="Num"/><br/>
+        <label for="Lieu de naissance">Lieu de naissance</label><br /> 
+        <input type="text" name="Lieu" id="Lieu"/><br/>
+        </fieldset>
+        </p> 
+        </form>
+        <form method="post" action="traitement.php"></form> 
+            <p> 
+            <fieldset>    
+                <legend>Autres Informations</legend>
+            <label for="pays">Dans quel pays habitez-vous ?</label><br /> 
+            <select name="pays" id="pays"> 
+            <optgroup label="Europe"> 
+            <option value="france">France</option> 
+            <option value="espagne">Espagne</option> 
+            <option value="italie">Italie</option> 
+            <option value="royaume-uni">Royaume-Uni</option> 
+            </optgroup> 
+            <optgroup label="Amérique"> 
+            <option value="canada">Canada</option> 
+            <option value="etats-unis">Etats-Unis</option> 
+            </optgroup> 
+            <optgroup label="Asie"> 
+            <option value="chine">Chine</option> 
+            <option value="japon">Japon</option> 
+            </optgroup> 
+            <optgroup label="Africa">
+             <option value="Afrique du sud">Afrique du sud</option> 
+             <option value="Benin">Benin</option> 
+             <option value="Ghana">Ghana</option> 
+            <option value="TOGO">TOGO</option> 
+            </optgroup>
+            </select><br />
+            <label for="sexe">Quelle est votre sexe ?</label><br /> 
+            <select name="sexe" id="sexe"> 
+            <optgroup label="genre"> 
+            <option value="Masculin">Masculin</option> 
+            <option value="feminin">feminin</option> 
+            </optgroup>
+        </select><br />
+        </fieldset>
+        </p> 
+         </form>
+        <form method="post" action="traitement.php"> 
+            <p> 
+                <fieldset>
+               <legend> Cochez votre diplome :</legend><br /> 
+                <input type="checkbox" name="Sans diplome" id="Sans diplome" /> <label for="Sans diplome">Sans diplome</label><br /> 
+                <input type="checkbox" name="CEP" id="CEP" /> <label for="CEP">CEP</label><br /> 
+                <input type="checkbox" name="BEPC" id="BEPC" /> <label for="BEPC">BEPC</label><br /> 
+                <input type="checkbox" name="BEPC" id="BEPC" /> <label for="BEPC">BEPC</label><br /> 
+                <input type="checkbox" name="License" id="License" /> <label for="License">License</label><br /> 
+                <input type="checkbox" name="Master" id="Master" /> <label for="Master">Master</label><br /> 
+            </fieldset>
+            </p> 
+         </form>  
+         <form method="post" action="traitement.php"> 
+            <p> 
+                <fieldset>
+               <legend> Cochez votre situation matrimonial :</legend><br /> 
+                <input type="checkbox" name="Célibtaire" id="Célibtaire" /> <label for="Célibtaire">Célibtaire</label><br /> 
+                <input type="checkbox" name="Marié" id="Marié" /> <label for="Marié">Marié</label><br /> 
+            
+            </fieldset>
+            </p> 
+         </form>  
+        
+</body>
+</html>
