@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body2">
+
+
+<style>
+    /* Style général pour l'affichage */
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    /* -------- TABLEAU 1 -------- */
+    .tableau1 {
+      width: 20%;
+      border-collapse: collapse;
+      margin-bottom: 40px;
+    }
+
+    .tableau1 td {
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      height: 20px;
+    }
+
+    .tableau1 .row1 {
+      font-size: 24px;
+    }
+
+    .tableau1 .col-large {
+      width: 20%;
+      font-size: 20px;
+    }
+
+    .tableau1 .col-small {
+      width: 20%;
+      font-size: 16px;
+    }
+
+    /* -------- TABLEAU 2 -------- */
+    .tableau2 {
+      width: 20%;
+      height: 40px;
+      border-collapse: collapse;
+    }
+
+    .tableau2 td {
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 24px;
+    }
+
+    .tableau2 .cell-a {
+      width: 70%;
+      background-color:rgb(8, 255, 218);
+    }
+
+    .tableau2 .cell-bc {
+      width: 20%;
+    }
+     /* -------- TABLEAU  -------- */
+      .tableau3 {
+      width: 20%;
+      height: 60px;
+      border-collapse: collapse;
+      margin-top: 40px;
+    }
+
+    .tableau3 td {
+      border: 1px solid black;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 24px;
+    }
+
+    .tableau3 .cell-3a {
+      width: 70%;
+      background-color:rgb(8, 255, 218);
+    }
+
+    .tableau3 .cell-3bc {
+      width: 70%;
+    }
+     .tableau3 .cell-4a {
+      width: 20%;
+      background-color:rgb(8, 255, 218);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- TABLEAU 1 -->
+  <table class="tableau1">
+    <caption><strong>Tab1</strong></caption>
+    <tr class="row1">
+      <td colspan="2">a</td>
+    </tr>
+    <tr>
+      <td class="col-large">c</td>
+      <td class="col-small">d</td>
+    </tr>
+  </table>
+  <!-- TABLEAU 2  -->
+  <table class="tableau2">
+    <caption><strong>Tab2</strong></caption>
+    <tr>
+      <td class="cell-a" rowspan="2">a</td>
+      <td class="cell-bc">b</td>
+    </tr>
+    <tr>
+      <td class="cell-bc">c</td>
+    </tr>
+    </table>
+    <!-- TABLEAU 3 -->
+  <table class="tableau3">
+      <caption><strong>Tab fusion</strong></caption>
+    <tr>
+      <td class="cell-3a" rowspan="2">a</td>
+      <td class="cell-3bc" colspan="2">b</td>
+    </tr>
+    <tr>
+    <td class="cell-3bc"colspan="2">c</td>
+    </tr>
+    <tr>
+    <td class="cell-3a" rowspan="2">d</td>
+    <td class="cell-3a" rowspan="2">e</td>
+    <td class="cell-3a" rowspan="1">f</td>
+    <tr> 
+     <td class="cell-3a" rowspan="1">g</td>
+    </tr>                                   
+    </tr>
+  </table>
+</body>
+</html>
